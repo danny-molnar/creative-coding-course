@@ -1,3 +1,5 @@
+Reference: https://www.npmjs.com/package/canvas-sketch
+
 To create a new Canvas Sketch:
 
 npx canvas-sketch-cli sketch.js --new --open
