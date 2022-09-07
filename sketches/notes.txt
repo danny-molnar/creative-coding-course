@@ -1,0 +1,7 @@
+To create a new Canvas Sketch:
+
+npx canvas-sketch-cli sketch.js --new --open
+
+To open an already created one:
+
+npx canvas-sketch-cli sketch.js --open
