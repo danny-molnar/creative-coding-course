@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="600">
+    </canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+
+        context.lineWidth = 2;
+        context.strokeStyle = "#FF0011";
+       
+        for (let i=0; i<5; i++) {
+            for (let j = 0; j<5; j++) {
+                let w = 60;
+                let h = 60;
+                let g = 20;
+                let x = 100 + (w + g) * i;
+                let y = 100 + (h + g) * j;
+                context.beginPath();
+                context.rect(x,y,w,h);
+                context.stroke();
+
+                if (Math.random()>0.5) {
+                    context.beginPath();
+                    context.rect(x+10, y+10, w-20,h-20);
+                    context.stroke();
+                }
+            }
+        }
+
+        //let artists = ["JSBach", "ABBA", "Royksopp", "Stockhausen", "Kurtag", "FrankJavCee"]
+        //let listArtists = (arts) => {
+        //    arts.forEach(item => {
+        //        console.log(item)
+        //    });
+        //}
+        //listArtists(artists);
+
+    </script>
+</body>
+
+</html>
