@@ -26,7 +26,7 @@ const sketch = () => {
     let x,y;
 
     const num = 50;
-    const radius = width * 0.3;
+    const radius = width * 0.9;
 
     for(let i = 0; i<num; i++){
 
